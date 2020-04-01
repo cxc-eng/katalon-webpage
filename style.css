@@ -10,6 +10,8 @@ html {
 }
 
 .top-nav {
+    position: fixed;
+    width: 100%;
     background: #2B7FE1;
     display: flex;
     justify-content: space-between;
@@ -34,7 +36,7 @@ html {
     background: #2787E5;
     color: white;
     text-align: center; 
-    padding: 130px 5% 0 5%;
+    padding: 200px 5% 0 5%;
 }
 
 .header h1 {
@@ -64,3 +66,27 @@ html {
     margin-top: 45px;
 }
 
+/* PRODUCTS */
+
+.products-container {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 30px;
+    justify-content: space-around;
+}
+
+.product {
+    width: 130px;
+    margin-top: 20px;
+}
+
+.product img {
+    width: 50px;
+}
+
+.product p {
+    font-size: 16px;
+    color: #8FD9FF;
+    margin-bottom: 0;
+    line-height: 20px;
+}
