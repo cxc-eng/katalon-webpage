@@ -36,7 +36,7 @@ html {
     background: #2787E5;
     color: white;
     text-align: center; 
-    padding: 200px 5% 0 5%;
+    padding: 200px 15px 0 15px;
 }
 
 .header h1 {
@@ -76,6 +76,7 @@ html {
 }
 
 .product {
+    cursor: pointer;
     width: 130px;
     margin-top: 20px;
 }
@@ -90,3 +91,93 @@ html {
     margin-bottom: 0;
     line-height: 20px;
 }
+
+
+/* WHITE CONTAINER */
+
+.white-container {
+    padding: 0 15px;
+    background: rgb(242, 250, 255);
+}
+
+/* FLEXING WITH AWARDS */
+
+.flexing-with-awards {
+    padding-top: 130px;
+    padding-bottom: 50px;
+}
+
+.flexing-with-awards img {
+    width: 300px;
+}
+
+.award {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 480px;
+}
+
+.award p {
+    font-size: 28px;
+    padding: 20px 0;
+    color: #596778;
+    font-weight: 300;
+    text-align: center;
+}
+
+.award.left {
+    margin: 0 auto 0 0;
+}
+
+.award.right {
+    margin: 0 0 0 auto;
+}
+
+/* FLEXING WITH QUALITIES */
+
+.flexing-with-qualities {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.quality {
+    width: 320px;
+    margin-bottom: 50px;
+}
+
+.quality p {
+    color: #596778;
+    letter-spacing: 1px;
+    line-height: 1.5;
+    font-weight: 300;
+}
+
+.quality img {
+    width: 70px;
+}
+
+.icon-with-title {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.icon-with-title h2 {
+    margin: 0 0 12px 22px;
+    font-size: 23px;
+    font-weight: 500;
+}
+
+/* FLEXING WITH NUMBERS */
+
+.flexing-with-numbers {
+    padding: 0 15px;
+    background: rgb(250, 253, 255);
+    box-shadow: 0 30px 44px 0 rgba(19,27,79,0.03);
+}
+
+
+
