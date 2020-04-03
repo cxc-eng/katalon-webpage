@@ -223,4 +223,52 @@ html {
 }
 
 
+/* TABLES */
+
+.single-row {
+    padding: 10px;
+    background-color: #DFF2FF;
+    border-radius: 10px;
+}
+.single-row {
+    display: flex;
+    margin: 10px 0;
+    transition: 0.2s linear;
+}
+
+.biggest-col {
+    background: #FFFFFF;
+    width: 150px;
+    line-height: 80px;
+    font-size: 16px;
+    font-weight: 500;
+    text-align: center;
+    margin-right: 5px;
+    transition: 0.2s linear;
+    border-radius: 4px;
+}
+
+.small-col {
+    line-height: 80px;
+    background: #F4FBFF;
+    margin: 0 5px;
+    flex-basis: 90px;
+    max-width: 116px;
+    flex-grow: 1;
+    color: #596778;
+    font-size: 13px;
+    text-align: center;
+    border-radius: 4px;
+}
+
+.single-row:hover {
+    box-shadow: 0 0 0 3px #00A9FF;
+}
+
+.single-row:hover .biggest-col {
+    background: #00A9FF;
+    color: white;
+}
+
+
 
