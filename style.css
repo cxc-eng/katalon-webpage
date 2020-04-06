@@ -65,6 +65,7 @@ html {
     border-radius: 4px;
     font-size: 17px;
     margin-top: 45px;
+    cursor: pointer;
 }
 
 /* PRODUCTS */
@@ -269,6 +270,148 @@ html {
     background: #00A9FF;
     color: white;
 }
+
+/* products descriptions displayed on focus */
+
+.table p {
+    font-weight: 300;
+    font-size: 15px;
+    color: #333;
+}
+
+/*  why the hell does it work on IMG element? */
+.product {
+    text-align: center;
+}
+
+.products-description .product p {
+    margin-top: 10px;
+}
+
+.products-description .products-container {
+    margin-bottom: 30px;
+}
+
+.products-description {
+    padding: 0 15px ;
+    background-color: #fff;
+    border-radius: 4px;
+    box-shadow: 0 0 14px 0 rgba(19,27,79,0.03);
+    text-align: center;
+}
+
+.products-description p {
+    font-size: 14px;
+    color: #596778;
+    margin-bottom: 10px;
+    line-height: 20px;
+    margin-top: 10px;
+    font-weight: 300;
+}
+
+.products-description a {
+    display: block;
+    text-decoration: none;
+    color: #318AE5;
+}
+
+
+/* FLEXING WITH COVERAGE */
+
+.flexing-with-coverage {
+    padding: 0 15px 50px;
+}
+
+.flexing-with-coverage h2 {
+    color: #081D36;
+    font-size: 40px;
+    font-weight: 400;
+    margin-top: 50px;
+    line-height: 52px;
+}
+
+.flexing-with-coverage p {
+    margin-top: 10px;
+    font-weight: 300;
+    color: #596778;
+    font-size: 23px;
+    line-height: 34px;
+}
+
+.flexing-with-coverage h2,
+.flexing-with-coverage p {
+    text-align: center;
+    
+}
+
+.single-coverage h2 {
+    color: #333;
+    font-size: 23px;
+    font-weight: 500;
+    line-height: 32px;
+    letter-spacing: 0;
+    margin-top: 20px;
+    margin-bottom: 12px;
+    
+}
+
+.single-coverage p {
+    font-size: 17px;
+    line-height: 25px;
+    color: #596778;
+}
+
+.coverage-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.single-coverage {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+}
+
+.single-coverage img {
+    width: 100px;
+}
+
+
+/*  CLIENT OPINION ABOUT US */
+
+.client-opnion-about-us {
+    background: #fff; 
+    padding: 30px 10%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.client-opnion-about-us img {
+    width: 300px;
+    margin-bottom: 20px;
+}
+.client-opnion-about-us .opinion {
+    text-align: left;
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 30px;
+    color: #596778;
+}
+
+.client-opnion-about-us cite {
+    margin-top: 20px;
+    display: block;
+    font-size: 16px;
+}
+.client-opnion-about-us a {
+    margin-top: 20px;
+    width: 100%;
+    text-decoration: none;
+    color:#318AE5;
+    font-size: 16px;
+}
+
 
 
 
