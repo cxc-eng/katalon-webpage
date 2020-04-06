@@ -412,6 +412,31 @@ html {
     font-size: 16px;
 }
 
+/* YOUR JOURNEY SECTION */
+.journey-starts-here {
+    margin: 40px 0;
+    padding: 0 15px;
+    text-align: center;
+}
+.journey-starts-here h2 {
+    letter-spacing: 0px;
+    font-size: 36px;
+    line-height: 45px;
+    font-weight: 500;
+    color: #081D36;
+}
+
+.journey-starts-here button {
+    margin-top: 20px;
+    color: #fff;
+    padding: 20px 45px;
+    background: #00A9FF;
+    border: none;
+    border-radius: 4px;
+    font-size: 19px;
+    font-weight: bold;
+}
+
 
 
 
