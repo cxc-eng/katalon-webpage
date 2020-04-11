@@ -13,6 +13,23 @@
     <nav class="top-nav">
         <img src="https://d1h3p5fzmizjvp.cloudfront.net/themes/katalon_4/images/katalon_template_1809/logo@2x.png">
         <img src="https://d1h3p5fzmizjvp.cloudfront.net/themes/katalon_4/images/katalon_template_1809/button_show_menu_mobile_type_2@2x.png">
+    
+    <div class="mobile-nav">
+        <div class="icon-container">
+            <img src="https://d1h3p5fzmizjvp.cloudfront.net/themes/katalon_4/images/katalon_template_1809/logo_katalon@2x.png" alt="Katalon Studio">
+            <img src="https://d1h3p5fzmizjvp.cloudfront.net/themes/katalon_4/images/katalon_template_1809/btn_hide_menu_mobile_type_2.png">    
+        </div>
+       
+        <ul>
+            <li><a href="">Products</a></li>
+            <li><a href="">Pricing</a></li>
+            <li><a href="">Solutions</a></li>
+            <li><a href="">Resources</a></li>
+            <li><a href="">Sign In</a></li>
+            <li><a href="">Download Now</a></li>
+        </ul>
+    </div>
+    
     </nav>
 
     <section class="header">
@@ -267,5 +284,16 @@
     </footer>
     </nav>
 
+    <script>
+
+        document.querySelector('.top-nav img:nth-of-type(2)').addEventListener('click', function() {
+            document.querySelector('.mobile-nav').classList.toggle('active');
+        })
+
+        document.querySelector('.mobile-nav img:nth-of-type(2)').addEventListener('click', function() {
+            document.querySelector('.mobile-nav').classList.toggle('active');
+        })
+
+    </script>
 </body>
 </html>

@@ -550,6 +550,52 @@ footer a {
 
 /* MOBILE-NAV */
 
+.mobile-nav {
+    position: fixed;
+    left: -100%;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    padding: 0 20px;
+    transition: 0.4s ease-in-out;
+}
+
+.icon-container {
+    height: 65px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+}
+
+.icon-container img {
+    width: 100px;
+    height: auto;
+}
+
+.icon-container img:last-of-type {
+    width: 20px;
+}
+
+.mobile-nav li {
+    list-style: none;
+}
+
+.mobile-nav a {
+    text-decoration: none;
+    color: #081D36;
+    font-size: 22px;
+    line-height: 38px;
+    font-weight: 300;
+}
+
+.active {
+    left: 0;
+}
+
+
 
 
 
