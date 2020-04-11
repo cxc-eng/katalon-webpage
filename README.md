@@ -9,6 +9,7 @@ https://www.semrush.com/blog/semantic-html5-guide/
 https://searchengineland.com/seo-advantages-of-machine-readable-html5-semantic-markup-314455
 https://www.inboundnow.com/html5-semantic-elements-mean-seo/
 - gotta checkout precisely what font-weights are gonna be used in a project
+- I gotta work on naming and structuring the CSS - its horrible.
 
 
 
