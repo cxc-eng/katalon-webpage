@@ -148,6 +148,7 @@ html {
 .quality {
     width: 320px;
     margin-bottom: 50px;
+    max-width: 410px;
 }
 
 .quality p {
@@ -364,6 +365,8 @@ html {
 .coverage-container {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
+
 }
 
 .single-coverage {
@@ -371,6 +374,7 @@ html {
     display: flex;
     flex-direction: column;
     align-items: center; 
+    max-width: 410px;
 }
 
 .single-coverage img {
@@ -441,14 +445,18 @@ html {
 .bottom-nav {
     display: grid;
     grid-template-areas: 
-    "contact contact",
+    "contact contact"
     "links links"
-    "links links";
+    "copyrights terms";
 }
 
 .bottom-nav {
     background: white;
     padding: 40px 30px;
+}
+
+.bottom-address {
+    grid-area: contact;
 }
 
 
@@ -500,6 +508,7 @@ html {
 /* BOTTOM LINKS */
 
 .links-container {
+    grid-area: links;
     display: flex;
     flex-wrap: wrap;
     margin-top: 30px;
@@ -534,17 +543,22 @@ html {
 /* FOOTER */
 
 .copyrights {
+    grid-area: copyrights;
     color: #9DABB8;
     line-height: 35px;
     font-size: 12px;
 }
 
-footer a {
-        text-decoration: none;
-        color: #596778;
-        line-height: 30px;
-        font-size: 13px;
-        margin-right: 10px;
+.terms {
+    grid-area: terms;
+}
+
+.terms a {
+    text-decoration: none;
+    color: #596778;
+    line-height: 30px;
+    font-size: 13px;
+    margin-right: 10px;
 }
 
 
@@ -596,6 +610,35 @@ footer a {
 }
 
 
+
+
+/* MEDIA QUERIES */
+
+
+@media only screen and (min-width: 567px) {
+    .header {
+        padding-bottom: 50px;
+    }
+
+    .flexing-with-awards {
+        padding-top: 50px;
+    }
+}
+
+
+@media only screen and (min-width: 768px) {
+    footer {
+        grid-area: footer;
+    }
+    .bottom-nav {
+        grid-template-areas: 
+        "contact links"
+        "contact links"
+        "copyrights terms";
+        column-gap: 2em;
+    }
+     
+}
 
 
 

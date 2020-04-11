@@ -1,5 +1,6 @@
 # katalon-webpage
 Layout training
+-Mobile First
 
 lessons learned so far:
 - I can see a great potential in CSS frameworks like materialize that do the repetetive work for you. I could make special classes and use em instead of repeating my code.
