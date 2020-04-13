@@ -10,6 +10,8 @@ html {
     background: rgb(242, 250, 255);
 }
 
+/* TOP-NAV */
+
 .top-nav {
     position: fixed;
     width: 100%;
@@ -107,6 +109,9 @@ html {
 .flexing-with-awards {
     padding-top: 130px;
     padding-bottom: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
 
 .flexing-with-awards img {
@@ -180,6 +185,8 @@ html {
     margin: 0 15px;
     background: rgb(250, 253, 255);
     box-shadow: 0 30px 44px 0 rgba(19,27,79,0.03);
+    display: flex;
+    align-items: center;
 }
 .flexing-with-numbers p {
     font-size: 40px;
@@ -188,10 +195,12 @@ html {
     padding: 50px 20px;
 }
 .left-side-text {
+    min-width: 320px;
     max-width: 444px;
     width: 80%;
     text-align: center;
     line-height: 60px;
+    flex-shrink: 1;
 }
 
 .flexing-with-numbers .number-of-clients {
@@ -199,6 +208,11 @@ html {
     color: #00A9FF;
     font-weight: 600;
     letter-spacing: 1px;
+}
+.flexing-with-numbers .right-side-img img {
+    display: none;
+    width: 100%;
+    flex-grow: 1;
 }
 
 .table {
@@ -342,7 +356,6 @@ html {
 .flexing-with-coverage h2,
 .flexing-with-coverage p {
     text-align: center;
-    
 }
 
 .single-coverage h2 {
@@ -352,8 +365,7 @@ html {
     line-height: 32px;
     letter-spacing: 0;
     margin-top: 20px;
-    margin-bottom: 12px;
-    
+    margin-bottom: 12px; 
 }
 
 .single-coverage p {
@@ -391,10 +403,12 @@ html {
     flex-direction: column;
     align-items: center;
 }
+
 .client-opnion-about-us img {
     width: 300px;
     margin-bottom: 20px;
 }
+
 .client-opnion-about-us .opinion {
     text-align: left;
     font-size: 20px;
@@ -408,6 +422,7 @@ html {
     display: block;
     font-size: 16px;
 }
+
 .client-opnion-about-us a {
     margin-top: 20px;
     width: 100%;
@@ -417,11 +432,13 @@ html {
 }
 
 /* YOUR JOURNEY SECTION */
+
 .journey-starts-here {
     margin: 40px 0;
     padding: 0 15px;
     text-align: center;
 }
+
 .journey-starts-here h2 {
     letter-spacing: 0px;
     font-size: 36px;
@@ -610,8 +627,6 @@ html {
 }
 
 
-
-
 /* MEDIA QUERIES */
 
 
@@ -637,9 +652,11 @@ html {
         "copyrights terms";
         column-gap: 2em;
     }
-     
-}
 
+    .flexing-with-numbers .right-side-img img {
+        display: block;
+    }
+}
 
 
 
