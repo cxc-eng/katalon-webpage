@@ -333,6 +333,14 @@ html {
 
 /* FLEXING WITH COVERAGE */
 
+.cov-flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    align-content: space-around;
+    justify-content: space-around;
+}
+
 .flexing-with-coverage {
     padding: 0 15px 50px;
 }
@@ -375,6 +383,7 @@ html {
 }
 
 .coverage-container {
+    flex-shrink: 0;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -465,6 +474,7 @@ html {
     "contact contact"
     "links links"
     "copyrights terms";
+    justify-content: center;
 }
 
 .bottom-nav {
@@ -502,6 +512,7 @@ html {
 .follow-us {
     display: block;
     margin-top: 20px;
+    margin-bottom: 20px;
     font-style: normal;
     color: #596778;
     text-transform: uppercase;
@@ -528,7 +539,6 @@ html {
     grid-area: links;
     display: flex;
     flex-wrap: wrap;
-    margin-top: 30px;
     margin-bottom: 30px;
 }
 
@@ -655,6 +665,18 @@ html {
 
     .flexing-with-numbers .right-side-img img {
         display: block;
+    }
+
+    .journey-starts-here h2 {
+        font-size: 49px;
+        margin-bottom: 15px;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    .links {
+        flex-basis: 25%;
+        min-width: 150px;
     }
 }
 
