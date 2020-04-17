@@ -32,6 +32,10 @@ html {
     width: 20px;
 }
 
+.covid-19-reponse {
+    display: none;
+}
+
 /* HEADER */
 
 .header {
@@ -677,6 +681,60 @@ html {
     .links {
         flex-basis: 25%;
         min-width: 150px;
+    }
+
+
+    /* NAV */
+
+    .mobile-nav {
+        all: unset;
+    }
+
+    .icon-container {
+        display: none;
+    }
+
+    .nav-container {
+        max-width: 1200px;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: auto auto 1fr auto;
+        align-items: center;
+    }
+
+    .top-nav {
+    background: #2787E5;
+    color: white;
+    }
+
+    .top-nav img:nth-of-type(2) {
+        display: none;
+    }
+
+    .top-nav img:nth-of-type(1) {
+        width: 120px;
+    }
+
+    .top-nav ul {
+        display: flex;
+        justify-content: flex-end;
+        
+    }
+
+    .top-nav li {
+        margin: 0 20px;
+    }
+
+    .top-nav ul li:nth-last-of-type(2) {
+        order: 2;
+    }
+
+    .top-nav a {
+        color: white;
+    }
+
+    .covid-19-reponse {
+        display: block;
     }
 }
 
