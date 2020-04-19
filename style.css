@@ -36,6 +36,13 @@ html {
     display: none;
 }
 
+.nav-container {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+
 /* HEADER */
 
 .header {
@@ -753,6 +760,8 @@ html {
         margin-right: 20px;
     }
 
+    /* TOP NAVBAR HOVER EFFECTS */
+
     .mobile-nav a {
         font-size: 16px;
         transition: text-shadow 0.2s ease-in-out;
@@ -796,7 +805,8 @@ html {
 
     .flexing-with-awards,
     .flexing-with-numbers,
-    .flexing-with-qualities {
+    .flexing-with-qualities,
+    .cov-flex-container {
         max-width: 1200px;
         margin: 0 auto;
     }
@@ -813,11 +823,6 @@ html {
         font-size: 22px;
     }
 
-    .cov-flex-container {
-        margin: 0 auto;
-        max-width: 1200px;
-    }
-
     .cov-flex-container > * {
         flex-basis: 50%;
     }
@@ -831,7 +836,6 @@ html {
     .journey-starts-here {
         padding: 100px 0;
     }
-
 }
 
 
