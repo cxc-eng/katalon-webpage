@@ -229,6 +229,19 @@ html {
 .table {
     padding-top: 50px;
     margin: 0 15px;
+    display: grid;
+    grid-template-areas:
+    "top-part top-part"
+    "table-container table-container"
+    "products products";
+    gap: 3%;
+}
+.table-container {
+    grid-area: table-container;
+}
+
+.table .top-part-of-grid {
+    grid-area: top-part;
 }
 
 .table h2 {
@@ -324,6 +337,7 @@ html {
     border-radius: 4px;
     box-shadow: 0 0 14px 0 rgba(19,27,79,0.03);
     text-align: center;
+    grid-area: products;
 }
 
 .products-description p {
@@ -690,6 +704,12 @@ html {
         margin: 0 auto;
     }
 
+    .table {
+        grid-template-areas: 
+        "top-part top-part"
+        "table-container products";
+    }
+
 }
 
 @media screen and (min-width: 1200px) {
@@ -806,7 +826,8 @@ html {
     .flexing-with-awards,
     .flexing-with-numbers,
     .flexing-with-qualities,
-    .cov-flex-container {
+    .cov-flex-container,
+    .table {
         max-width: 1200px;
         margin: 0 auto;
     }
