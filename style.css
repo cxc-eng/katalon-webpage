@@ -151,7 +151,7 @@ html {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    justify-content: center;
+    justify-content: space-around;
 }
 
 .quality {
@@ -677,7 +677,15 @@ html {
     }
 }
 
-@media only screen and (min-width: 1200px) {
+@media screen and (min-width: 1000px) {
+    .client-opnion-about-us {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+}
+
+@media screen and (min-width: 1200px) {
     .links {
         flex-basis: 25%;
         min-width: 150px;
@@ -735,8 +743,100 @@ html {
 
     .covid-19-reponse {
         display: block;
+        border-left: 2px solid #8AB8E6;
+        padding: 10px 20px;
+        font-weight: 500;
+        font-size: 20px;
     }
-}
 
+    .nav-container > img {
+        margin-right: 20px;
+    }
+
+    .mobile-nav a {
+        font-size: 16px;
+        transition: text-shadow 0.2s ease-in-out;
+    }
+
+    .mobile-nav li::after {
+        content: '';
+        height: 2px;
+        transform: scale(0, 1);
+        background: white;
+        display: block;
+        transition: 0.5s;
+    }
+
+    .mobile-nav a:hover {
+        text-shadow: 1px 0 0 white;
+    }
+
+    .mobile-nav li:hover::after {
+        transform: scale(1,1);
+        
+    }
+
+    .mobile-nav li:nth-last-of-type(1)::after {
+        transform: scale(0,0);
+    }
+
+    .mobile-nav li:nth-last-of-type(1) a {
+        padding: 8px 24px;
+        border-radius: 4px;
+        border: 2px solid #fff;
+        text-shadow: auto;
+        transition: 0.2s ease-in-out;
+    }
+
+    .mobile-nav li:nth-last-of-type(1):hover a {
+        background: white;
+        color: #2787E5;
+        text-shadow: 1px 0 0;
+    }
+
+    .flexing-with-awards {
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+    .flexing-with-qualities {
+        max-width: 1200px;
+        margin: 0 auto;
+        justify-content: space-around;
+    }
+    
+    .flexing-with-numbers {
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+    .table > h2 {
+        font-size: 40px;
+        margin-top: 100px;
+    }
+
+    .table > p {
+        font-size: 22px;
+    }
+
+    .cov-flex-container {
+        margin: 0 auto;
+        max-width: 1200px;
+    }
+
+    .cov-flex-container > * {
+        flex-basis: 50%;
+    }
+
+    .client-opnion-about-us {
+        width: 90%;
+        margin: 0 auto;
+        max-width: 1000px;
+    }
+    
+    .journey-starts-here {
+        padding: 100px 0;
+    }
+
+}
 
 
