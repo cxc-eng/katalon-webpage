@@ -276,6 +276,11 @@ html {
     transition: 0.2s linear;
 }
 
+.single-row:nth-of-type(1),
+.single-row:nth-last-of-type(1) {
+    margin: 0 0;
+}
+
 .biggest-col {
     background: #FFFFFF;
     width: 150px;
@@ -708,6 +713,10 @@ html {
         grid-template-areas: 
         "top-part top-part"
         "table-container products";
+    }
+
+    .flexing-with-coverage > h2 {
+        margin-top: 150px;
     }
 
 }
