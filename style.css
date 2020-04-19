@@ -794,21 +794,16 @@ html {
         text-shadow: 1px 0 0;
     }
 
-    .flexing-with-awards {
+    .flexing-with-awards,
+    .flexing-with-numbers,
+    .flexing-with-qualities {
         max-width: 1200px;
         margin: 0 auto;
     }
     .flexing-with-qualities {
-        max-width: 1200px;
-        margin: 0 auto;
         justify-content: space-around;
     }
     
-    .flexing-with-numbers {
-        max-width: 1200px;
-        margin: 0 auto;
-    }
-
     .table > h2 {
         font-size: 40px;
         margin-top: 100px;
