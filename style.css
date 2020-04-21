@@ -21,6 +21,7 @@ html {
     align-items: center;
     height: 65px;
     padding: 0 20px;
+    z-index: 1;
 }
 
 .top-nav img:first-of-type {
@@ -51,6 +52,11 @@ html {
     color: white;
     text-align: center; 
     padding: 200px 15px 0 15px;
+}
+
+.header > img {
+    display: none;
+    position: absolute;
 }
 
 .header h1 {
