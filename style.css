@@ -57,6 +57,10 @@ html {
 .header > img {
     display: none;
     position: absolute;
+    right: 5%;
+    width: 30%;
+    max-width: 500px;
+    top: 15%;
 }
 
 .header h1 {
@@ -501,6 +505,7 @@ html {
     border-radius: 4px;
     font-size: 19px;
     font-weight: bold;
+    cursor: pointer;
 }
 
 /* CONTACT, BOTTOM NAV */
@@ -871,6 +876,45 @@ html {
     
     .journey-starts-here {
         padding: 100px 0;
+        background: url("https://d1h3p5fzmizjvp.cloudfront.net/themes/katalon_4/images/homepage/new_2019/Group 14.png");
+        background-position: center center;
+        background-size: contain;
+    }
+
+
+    /* HEADER  */
+    .header-text-container {
+        width: 60%;
+        max-width: 700px;
+        text-align: left;
+        margin-left: 100px;
+    }
+    
+    .header {
+        padding-bottom: 5px;
+    }
+
+    .header > img {
+        display: block;
+    }
+
+    .header h1 {
+        font-size: 64px;
+    }
+
+    .header .products-container {
+        position: relative;
+        left: -40px;
+        justify-content: flex-start;
+    }
+
+    .product p {
+        opacity: 0;
+        transition: 0.3s ease-in-out;
+    }
+    
+    .product:hover p {
+        opacity: 1;
     }
 }
 
